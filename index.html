@@ -52,6 +52,22 @@
             padding-bottom: 0.5rem;
         }
 
+        .about-content {
+            display: flex;
+            align-items: stretch;
+            gap: 2rem;
+        }
+
+        .about-content img {
+            height: 100%;
+            width: auto;
+            max-width: 40%;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
         li {
             padding-bottom: 0.5rem;
             margin-left: 1.4rem;
@@ -130,6 +146,16 @@
             .priorities {
                 grid-template-columns: 1fr;
             }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-content img {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         /* Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc. */
@@ -162,7 +188,10 @@
     <div class="container">
         <section>
             <h2>About Phil</h2>
-            <p>I am committed to serving the people of Cabarrus County with integrity, transparency, and a focus on sustainable growth. My wife of 52 years and I moved here in 2022 to be closer to our daughter and her family.  I’ve seen the challenges facing our county.  As a retired engineer, I have the time, knowledge and experience to address them effectively.</p>
+            <div class="about-content">
+                <img src="phil.png" alt="Phil Henry">
+                <p>I am committed to serving the people of Cabarrus County with integrity, transparency, and a focus on sustainable growth. My wife of 52 years and I moved here in 2022 to be closer to our daughter and her family.  I’ve seen the challenges facing our county.  As a retired engineer, I have the time, knowledge and experience to address them effectively.</p>
+            </div>
         </section>
 
         <section>
